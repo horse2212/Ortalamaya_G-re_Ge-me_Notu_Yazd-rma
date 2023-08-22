@@ -1,0 +1,46 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Ortalamaya_Göre_Geçme_Notu_Yazdırma
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("lütfen 1 not giriniz");
+            int birnot = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("lütfen 2 not giriniz");
+            int ikinot = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("lütfen 3 not giriniz");
+            int üçnot = Convert.ToInt32(Console.ReadLine());
+
+            int toplam = (birnot + ikinot + üçnot) / 3;
+
+
+            if(toplam>100 && toplam>80)
+            {
+                Console.WriteLine("A+");
+                Console.ReadLine();
+            }
+
+            else if(toplam> 70 && toplam>50)
+            {
+                Console.WriteLine("B+");
+                Console.ReadLine();
+            }
+
+            else
+            {
+                Console.WriteLine("F");
+                Console.ReadLine();
+            }
+
+            Console.ReadLine();
+        }
+    }
+}
